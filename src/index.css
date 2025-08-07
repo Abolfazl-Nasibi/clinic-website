@@ -1,8 +1,72 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir-Thin.woff2') format('woff2'),
+       url('/assets/fonts/Vazir-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir-Light.woff2') format('woff2'),
+       url('/assets/fonts/Vazir-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir.woff2') format('woff2'),
+       url('/assets/fonts/Vazir.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir-Medium.woff2') format('woff2'),
+       url('/assets/fonts/Vazir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('/assets/fonts/Vazir-Bold.woff2') format('woff2'),
+       url('/assets/fonts/Vazir-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{
+  @apply font-vazir;
+}
+
 @theme {
+  /* fonts */
+  --font-vazir : Vazir;
   --color-primary : #1a2b57;
-  --color-secondary : #f4d85c
+  --color-primary-light : #455b93		;
+  --color-secondary : #f4d85c;
+  --color-secondary-light : #f9efc2;
+  --color-secondary-ligher : #fdf9e4;
+}
+
+
+/* classes */
+.img-inner-shadow {
+  
+}
+
+.img-inner-shadow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  border-radius: 8px;
 }
 
 
