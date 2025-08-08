@@ -75,62 +75,14 @@ export default function Header() {
       <div
         className={`flex items-center justify-between px-10 transition-all py-2 ${
           scrolled
-            ? "bg-white shadow-md fixed top-0 right-0 left-0 border-b-1"
+            ? "bg-primary-dark shadow-md fixed top-0 right-0 left-0 border-b-1"
             : "absolute top-8 left-0 right-0"
         }`}
       >
         {/* logo */}
-        <img src="/logo-black.png" alt="" className="w-8" />
+        <img src="/logo-gold.png" alt="" className="w-8" />
         {/* pages */}
         <ul className="flex items-center gap-10">
-          {/* <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              صفحه اصلی
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              محصولات
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              خدمات
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              گالری
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              مقالات
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="hover:border-b-2 transition-all border-b-2 border-white hover:border-black font-medium"
-            >
-              درباره ما
-            </a>
-          </li> */}
           {pages.map((page) => (
             <NavItem key={page.label} label={page.label} href={page.href} scrolled={scrolled} />
           ))}
@@ -138,13 +90,13 @@ export default function Header() {
         {/* signIn/login & cart */}
         <div className="flex items-center gap-2">
           {/* cart */}
-          <a href="#">
+          <a href="#" className={` text-secondary `}>
             <FaCartShopping />
           </a>
           {/* signIn/login */}
           <a
             href="#"
-            className="font-medium border-2 rounded-md px-4 py-1 hover:bg-black hover:text-white hover:border-black transition-all"
+            className={`font-medium border-2 rounded-md px-4 py-1 border-secondary text-secondary hover:bg-secondary hover:text-primary-dark transition-all`}
           >
             ثبت نام
           </a>
