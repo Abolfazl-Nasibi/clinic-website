@@ -22,7 +22,7 @@ function Head() {
         <a
           href="https://doctor-yab.ir/Search/30965/%D8%AF%DA%A9%D8%AA%D8%B1-%D8%B3%D8%AC%D8%A7%D8%AF-%D8%B2%D8%B1%DB%8C%D9%86/"
           target="__blank"
-          className="border-2 border-secondary rounded-md text-secondary px-4 py-1 text-xl hover:bg-secondary hover:text-primary transition-all"
+          className="border-2 border-secondary rounded-md text-secondary px-4 py-1 text-xl hover:bg-secondary hover:text-primary-dark transition-all"
         >
           رزرو آنلاین نوبت
         </a>
