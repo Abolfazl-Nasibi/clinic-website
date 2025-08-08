@@ -1,0 +1,14 @@
+
+
+export default function NavItem({ label, href, scrolled }) {
+  return (
+    <li>
+      <a
+        href={href}
+        className={`hover:border-b-2 transition-all border-b-2 ${scrolled ? 'border-white' : 'border-transparent'}  hover:border-black font-medium`}
+      >
+        {label}
+      </a>
+    </li>
+  );
+}
