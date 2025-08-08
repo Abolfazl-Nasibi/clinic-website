@@ -28,7 +28,7 @@ function Head() {
         </a>
       </div>
       {/* doctor image */}
-      <img src="/person.png" alt="doctor image" />
+      <img src={`${import.meta.env.BASE_URL}/person.png`} />
     </div>
   );
 }
