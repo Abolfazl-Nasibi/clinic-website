@@ -80,7 +80,8 @@ export default function Header() {
         }`}
       >
         {/* logo */}
-        <img src="/logo-gold.png" alt="" className="w-8" />
+              <img src={`${import.meta.env.BASE_URL}/logo-gold.png`}  className="w-8"/>
+
         {/* pages */}
         <ul className="flex items-center gap-10">
           {pages.map((page) => (

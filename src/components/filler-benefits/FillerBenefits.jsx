@@ -28,7 +28,7 @@ export default function FillerBenefits() {
       <span className="font-bold text-4xl text-primary-dark">مزایای فیلر</span>
       <div className="flex justify-between items-center w-full px-40">
         {benefits.map((benefit)=>(
-        <BenefitBox {...benefit} />
+        <BenefitBox key={benefit.text} {...benefit} />
       ))}
       </div>
     </div>
