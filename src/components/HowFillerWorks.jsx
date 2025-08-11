@@ -1,6 +1,6 @@
 export default function HowFillerWorks() {
   return (
-    <div className="flex justify-between items-center gap-16 px-40 py-10 bg-primary-light">
+    <div className="flex justify-between items-center gap-16 px-40 py-10 bg-primary-dark">
       {/* texts */}
       <div className="flex flex-col items-start justify-center text-secondary">
         <span className="font-bold text-2xl mb-2">فیلر چطوری کار میکنه</span>
