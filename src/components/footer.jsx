@@ -21,12 +21,12 @@ export default function Footer() {
             {/* location */}
             <a href="https://maps.app.goo.gl/edgPncntiPXrnDkx5" className="flex items-center gap-1">
               <FaLocationDot />
-              <span>یاسوج سردار۶</span>
+              <span className="font-thin">یاسوج سردار۶</span>
             </a>
             {/* email */}
             <div className="flex items-center gap-1">
               <MdAlternateEmail />
-              <a href="#">blablabla@gmail.com</a>
+              <a href="#" className="font-thin">blablabla@gmail.com</a>
             </div>
           </div>
         </div>
